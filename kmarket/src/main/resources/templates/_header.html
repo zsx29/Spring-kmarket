@@ -7,6 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- 다음주소API -->
+    	
+	<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+	<script src="/kmarket/src/main/resources/static/member/addressapi.js"></script>
+
+    <!-- 다음주소API -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -51,7 +57,7 @@
             <div class="top">
                 <div>
 					<a th:if="${session['sessMember'] == null}" th:href="@{/member/login}">로그인</a>
-                    <a th:if="${session['sessMember'] == null}" th:href="@{/member/signup}">회원가입</a>
+                    <a th:if="${session['sessMember'] == null}" th:href="@{/member/terms}">회원가입</a>
                     <a th:if="${session['sessMember'] != null}" th:href="@{/member/logout}">로그아웃</a>
                     <a th:href="@{/admin}">관리자</a>
                     <a th:href="@{/shop/cart}"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;장바구니</a>
