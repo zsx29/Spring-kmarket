@@ -26,4 +26,12 @@ public class MemberService {
 	public void insertMember(MemberVo vo){
 		dao.insertMember(vo);
 	};
+	
+	// 아이디 찾기
+	public void selectSearchId(MemberVo vo) {
+		dao.selectSearchId(vo);
+	};
+	
+	
+	// 비밀번호 찾기
 }

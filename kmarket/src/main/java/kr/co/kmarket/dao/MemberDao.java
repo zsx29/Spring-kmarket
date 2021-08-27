@@ -17,7 +17,9 @@ public interface MemberDao {
 	public void insertMember(MemberVo vo);
 
 	// 아이디 찾기
-	public void selectId(MemberVo vo);
+	public void selectSearchId(MemberVo vo);
+
+	
 	
 	// 비밀번호 찾기
 }

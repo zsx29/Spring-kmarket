@@ -86,16 +86,17 @@ public class MemberController {
 	
 	@GetMapping("/member/searchId")
 	public String searchId() {
-		
+
 		return "/member/searchId";
 		
 	}
 	
 	@PostMapping("/member/searchId")
-	public String searchId() {
-		
+	public String searchId(MemberVo vo, Model model) {
+
+		return;
 	}
-	
+
 	@GetMapping("/member/searchPw")
 	public String searchPw() {
 		

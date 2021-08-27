@@ -28,7 +28,12 @@
 
 	</insert>
 	
-	
+	<select id="selectSearchId" resultType="kr.co.kmarket.vo.MemberVo">
+		SELECT `uid` FROM `km_member` 
+		WHERE `name` = #{name} 
+		and `hp` = #{hp} 
+		and `email` = #{email};
+	</select>
 	
 	<!--
  	<update id="updateMemberPointMinus">
