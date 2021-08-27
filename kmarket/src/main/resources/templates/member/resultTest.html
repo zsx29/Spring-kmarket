@@ -1,0 +1,32 @@
+<th:block th:include="@{member/_header.html}" />
+        <main>
+            <div id="member-login">
+                <div style=
+                	"display:flex;
+                	 justify-content:center;
+                	 text-align:center;
+                	 font-size:2rem;
+                	 font-weight:500;
+                	 font: normal '고딕'">아이디 찾기
+               	</div>
+				<form th:action="@{/member/searchId}" method="post">					
+					<div>
+						<label>
+							<span>이름</span> 
+							<input type="text" name="name" />
+						</label>
+						<label>
+							<span>전화번호</span> 
+							<input type="text" name="hp" />
+						</label>
+						<label>
+							<span>이메일</span> 
+							<input type="text" name="email" />
+						</label>
+					</div>
+					<button class="search-btn">조회</button>
+				</form>
+				<img src="../img/member_certifi_logo.gif" alt="banner">
+            </div>
+        </main>        
+<th:block th:include="@{member/_footer.html}" />

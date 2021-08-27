@@ -20,13 +20,13 @@ public class MemberController {
 	
 	@GetMapping("/member/join")
 	public String join() {
+
 		return "/member/join";
 	}
 	
 	@GetMapping("/member/logout")
 	public String logout(HttpSession sess) {
 
-		
 		sess.invalidate();
 		return "redirect:/index";
 		
@@ -56,6 +56,7 @@ public class MemberController {
 	
 	@GetMapping("/member/register")
 	public String register() {
+
 		return "/member/register";
 	}
 	
@@ -82,5 +83,25 @@ public class MemberController {
 
 		return "/member/terms";
 	}
+	
+	@GetMapping("/member/searchId")
+	public String searchId() {
+		
+		return "/member/searchId";
+		
+	}
+	
+	@PostMapping("/member/searchId")
+	public String searchId() {
+		
+	}
+	
+	@GetMapping("/member/searchPw")
+	public String searchPw() {
+		
+		return "/member/searchPw";
+		
+	}
+	
 	
 }

@@ -16,5 +16,8 @@ public interface MemberDao {
 	// 회원가입
 	public void insertMember(MemberVo vo);
 
+	// 아이디 찾기
+	public void selectId(MemberVo vo);
 	
+	// 비밀번호 찾기
 }

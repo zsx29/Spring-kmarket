@@ -164,6 +164,8 @@ footer p > strong {
     font-size: 0;
     border: none;
   }
+  
+  
   #member-login > form > span {
     clear: left;
     display: block;
@@ -459,3 +461,31 @@ footer p > strong {
     border-radius: 2px;
     cursor: pointer;
 }
+
+/* member-searchId */
+
+
+.search-btn {
+	width: 180px;
+	height: 110px;
+	padding: 0;
+	line-height: 63px;
+	font-size: 22px;
+	text-align: center;
+	color: #067dfd;
+	border-radius: 2px;
+	cursor: pointer;
+	border: none;
+	font: normal 20px '고딕';
+}
+
+.search-btn:hover{
+	transition: all 0.4s;
+	color: red;
+}
+
+
+
+
+
+
